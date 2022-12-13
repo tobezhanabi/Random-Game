@@ -1,0 +1,44 @@
+Arguments: 
+  /home/tobez/.nvm/versions/node/v16.16.0/bin/node /home/tobez/.node/corepack/yarn/1.22.15/bin/yarn.js
+
+PATH: 
+  /home/tobez/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:/home/tobez/.nvm/versions/node/v16.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/Git/cmd:/mnt/c/Users/😘/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/😘/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/😘/.cargo/bin:/mnt/c/Users/😘/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/😘/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/😘/AppData/Roaming/npm:/snap/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "tobez",
+    "license": "UNLICENSED",
+    "scripts": {
+      "codegen": "graph codegen",
+      "build": "graph build",
+      "deploy": "graph deploy --node https://api.thegraph.com/deploy/ tobezhanabi/tobez",
+      "create-local": "graph create --node http://localhost:8020/ tobezhanabi/tobez",
+      "remove-local": "graph remove --node http://localhost:8020/ tobezhanabi/tobez",
+      "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 tobezhanabi/tobez",
+      "test": "graph test"
+    },
+    "dependencies": {
+      "@graphprotocol/graph-cli": "0.37.1",
+      "@graphprotocol/graph-ts": "0.28.1"
+    },
+    "devDependencies": { "matchstick-as": "0.5.0" }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
